@@ -40,11 +40,9 @@ Next.js is a versatile and powerful framework that can be used for a wide range 
 
 ## When not to use Next.js?
 
-Next.js is not a one-size-fits-all solution, and there may be cases where Next.js is not the best option for your project. Some of the scenarios where you might not want to use Next.js are:
+Next.js is not a one-size-fits-all solution, and there may be cases where Next.js is not the best option for your project.
 
-- **Simple projects**: If you are building a simple website or web app that does not require SEO or performance optimization, Next.js may be overkill. Next.js can be more complex to set up and maintain than a simpler framework like React or Create React App.
-- **Projects with custom or complex routing**: Next.js's routing system is designed for static and server-rendered pages, and follows a file-based convention. If you need to create custom or complex dynamic routing, you may find it difficult or limiting to work with Next.js. You may be better off with a different framework that gives you more control and flexibility over routing.
-- **Projects that require a lot of state management**: The React-based framework does not have a built-in state management solution, and relies on React's context and hooks for managing state. If you need to manage a lot of state in your application, you may need to use a third-party library like Redux, MobX, or Zustand as in React. This may add more complexity and boilerplate code to your project, and may not be compatible with some of Next.js's features like SSG and ISR.
+- **Simple projects**: If you are building a simple website or web app that does not require SEO or performance optimization, Next.js may be overkill. Next.js can be more complex to set up and maintain than a simpler framework like Gatsby or a simple React app. Also for projects shich only use client-side state it is recommended to use plain React with a state management library like Moby or Zustand
 
 ## Conclusion
 
