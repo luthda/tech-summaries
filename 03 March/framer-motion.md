@@ -3,34 +3,33 @@
 Framer Motion is an simple animation library for react.
 ![framer_motion_logo](../assets/framer_motion_logo.png)
 
-## What is Framer Motion?
+##  What is Framer Motion?
 
-The React motion library of Framer provides several elements which can be enhanced with "animation values" and motion-hooks for the animation from single elements to entire sub-trees of components.
-React components can be smoothly animated with little additonal code from the Motion library.
+Framer Motion is a powerful animation library for React, designed to simplify the process of adding animations to React applications. It provides a range of features, including declarative syntax, animation controls, and support for both simple and complex animations. The library offers several elements enhanced with "animation values" and motion-hooks, allowing for smooth animations of single elements to entire sub-trees of components with minimal additional code.
 
-## What are the key animation features?
+##  Key Animation Features
 
-### Layout
+###  Layout
 
-Layout animations are usually costly because every animation frame triggers the layout system, which then results in a poor framerate. Motion layout uses transforms in animations for smooth framerates, instead of using the layout system. It is possible to create shared layout animations for components by attaching the layout prop to the motion component, for example t ocreate a moving underline component between tabs.
+Framer Motion excels in layout animations, which are typically costly due to the layout system being triggered on every animation frame, potentially leading to poor framerates. To address this, Framer Motion uses transforms in animations for smooth framerates, instead of relying on the layout system. This is achieved by attaching the layout prop to the motion component, enabling shared layout animations for components, such as creating a moving underline component between tabs.
 
 ```html
 <motion.div layout />
 ```
 
-### Gestures
+###  Gestures
 
-Motion supports hover, focus, tap, pan and drag gestures. This gestures extend the base event listener from React. Gestures can be integratet into a component by attaching a gesture prop to a motion component.
+The library supports a variety of gestures, including hover, focus, tap, pan, and drag. These gestures extend the base event listener from React, and can be integrated into a component by attaching a gesture prop to a motion component.
 
 ```html
 <motion.div whileHover={{ scale: 1.2 }} />
 ```
 
-### Scroll
+Scroll
 
-Motion has two types of scroll animation. Firstly the scroll-linked animation where the animation progress is directly coupled to the scroll progress. Secondly scroll-triggered animations when a element enters or leaves the viewport by an animation.
+Framer Motion offers two types of scroll animations: scroll-linked animations, where the animation progress is directly coupled to the scroll progress, and scroll-triggered animations, which trigger an animation when an element enters or leaves the viewport.
 
-```javascript
+```JS
 import { motion, useScroll } from "framer-motion"
 
 function Component() {
@@ -40,10 +39,38 @@ function Component() {
 }
 ```
 
-### Transition
+###  Transition
 
-Motion has an animation type transition which can animate an element between to states.
+Framer Motion includes a transition animation type, which can animate an element between two states.
 
 ```html
 <motion.div animate={{ x: 100 }} transition={{ delay: 1 }} />
 ```
+
+##  What is the Motion Component?
+
+The motion component is a central feature of the Framer Motion library. It is the foundation for all animations, with the library providing a motion component for every HTML and SVG element, such as motion.div, motion.circle, etc. These components work similarly to their static counterparts but offer additional animation props like animate, layout, etc. Any React component can be turned into a motion component by wrapping it with the motion() function and forwarding the component's ref.
+
+```JS
+const ClickableButton = ({ children, onClick }) => {
+ return (
+    <button
+      onClick={onClick}
+      style={{ padding: "10px", backgroundColor: "black", color: "white" }}
+    >
+      {children}
+    </button>
+ )
+}
+
+export ClickableButton
+
+// Wrap component into motion function to create a motion Button, which then can be animated with motion props
+const MotionClickableButton = motion(ClickableButton);
+
+export MotionClickableButton;
+```
+
+## Conclusion
+
+Framer Motion makes it remarkably easy to create animations in React. It requires no in-depth CSS animation knowledge, allowing developers to create detailed animations with just a few additional elements and props. Its intuitive approach and the wide range of features make it a popular choice for implementing animations in React applications.
