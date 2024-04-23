@@ -25,7 +25,7 @@ The library supports a variety of gestures, including hover, focus, tap, pan, an
 <motion.div whileHover={{ scale: 1.2 }} />
 ```
 
-Scroll
+### Scroll
 
 Framer Motion offers two types of scroll animations: scroll-linked animations, where the animation progress is directly coupled to the scroll progress, and scroll-triggered animations, which trigger an animation when an element enters or leaves the viewport.
 
