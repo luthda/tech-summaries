@@ -20,3 +20,9 @@ spec:
           envFrom:
             - configMapRef:
                 name: pgadmin-secret
+          resources:
+            limits:
+              memory: 256Mi
+              cpu: 500m
+            requests:
+              memory: 256Mi
