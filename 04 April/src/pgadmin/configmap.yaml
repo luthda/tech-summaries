@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: pgadmin-secret
+  labels:
+    app: pgadmin
+data:
+  PGADMIN_DEFAULT_EMAIL: admin@pgadmin.com
+  PGADMIN_DEFAULT_PASSWORD: admin
