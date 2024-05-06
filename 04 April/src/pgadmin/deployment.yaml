@@ -17,6 +17,7 @@ spec:
           image: dpage/pgadmin4:latest
           ports:
             - containerPort: 8080
+              protocol: TCP
           envFrom:
             - configMapRef:
                 name: pgadmin-secret
