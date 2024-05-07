@@ -5,6 +5,6 @@ metadata:
   labels:
     group: db
 data:
-  POSTGRES_DB: kanban
-  POSTGRES_USER: kanban
-  POSTGRES_PASSWORD: kanban
+  POSTGRES_DB: postgres_db
+  POSTGRES_USER: db_user
+  POSTGRES_PASSWORD: admin
