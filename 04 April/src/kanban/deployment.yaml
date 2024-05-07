@@ -1,29 +1,33 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pgadmin
+  name: kanban-app
+  labels:
+    app: kanban-app
+    group: backend
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: pgadmin
+      app: kanban-app
   template:
     metadata:
       labels:
-        app: pgadmin
+        app: kanban-app
+        group: backend
     spec:
       containers:
-        - name: pgadmin
-          image: dpage/pgadmin4:latest
+        - name: kanban-app
+          image: wkrzywiec/kanban-app:k8s
           ports:
             - containerPort: 8080
-              protocol: TCP
           envFrom:
             - configMapRef:
-                name: pgadmin-secret
+                name: postgres-config
+          env:
+            - name: DB_SERVER
+              value: postgres
           resources:
             limits:
               memory: 256Mi
               cpu: 500m
-            requests:
-              memory: 256Mi

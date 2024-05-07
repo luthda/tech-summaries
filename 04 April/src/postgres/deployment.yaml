@@ -2,6 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: postgres
+  labels:
+    app: postgres
+    group: db
 spec:
   replicas: 1
   selector:
@@ -11,6 +14,7 @@ spec:
     metadata:
       labels:
         app: postgres
+        type: db
     spec:
       containers:
         - name: postgres
@@ -20,11 +24,11 @@ spec:
               protocol: TCP
           envFrom:
             - configMapRef:
-                name: postgres-secret
+                name: postgres-config
           volumeMounts:
             - mountPath: /var/lib/postgresql/data
               name: postgresdata
       volumes:
         - name: postgresdata
           persistentVolumeClaim:
-            claimName: postgres-volume-claim
+            claimName: postgres-persistent-volume-claim
