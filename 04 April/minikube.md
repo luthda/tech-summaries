@@ -60,7 +60,11 @@ An Ingress resource can have multiple rules, each specifying a hostname or URL p
 
 Ingress controllers, such as Nginx or Traefik, watch for changes in the Ingress resources and update their configuration accordingly. They handle the routing of traffic to the appropriate backend services based on the defined rules.
 
-###   Kustomize
+### ClusterIP
+
+A ClusterIP is a Kubernetes Service type that exposes the Service on a cluster-internal IP. This means that the Service is only reachable from within the cluster.
+
+### Kustomize
 
 Kustomization is a file used by the Kustomize tool to describe how to build, customize, and deploy Kubernetes YAML configurations. It allows you to define and manage multiple YAML configurations as a single unit.
 
