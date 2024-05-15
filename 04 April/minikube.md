@@ -72,7 +72,7 @@ Kustomization files are used to define how Kustomize should apply patches, overl
 
 ## Setup Postgres and Adminer on local environment in Minikube
 
-Move to src-folder and run the following commands:
+Move to k8s-folder and run the following commands:
 
 ### Deploy Postgres on Minikube
 
