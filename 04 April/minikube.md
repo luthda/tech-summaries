@@ -1,5 +1,7 @@
 # Minikube
 
+![framer_motion_logo](../assets/minikube_logo.png)
+
 ## What is Minikube?
 
 Minikube is a tool that allows you to run Kubernetes locally on your machine. It sets up a single-node Kubernetes cluster that is great for development and testing purposes.
@@ -44,11 +46,33 @@ How it works:
 
 Persistent Volumes and Persistent Volume Claims provide a way to manage storage in Kubernetes in a scalable and flexible manner. They allow for dynamic provisioning of storage, data persistence across Pod restarts or failures, and easy migration of data to different storage systems.
 
-###  Config Map
+###  ConfigMap
 
 A ConfigMap is an object used to store configuration data in key-value pairs. It allows you to decouple configuration from container images, making it easier to manage and update application configurations.
 
 A ConfigMap is a collection of configuration data that can be consumed by Pods or other Kubernetes resources. It is typically used to store configuration files, properties, or environment variables that need to be passed to applications running in Pods.
+
+### Secrets
+
+Secrets are used to store and manage sensitive information such as passwords, API keys, and certificates. Secrets are encrypted at rest and in transit, providing an additional layer of security for your application.
+
+The choice between using Secrets or ConfigMaps depends on the nature of the data and its sensitivity.
+
+Use ConfigMaps when:
+
+- You have configuration data that is not sensitive.
+- The data is not confidential and can be exposed in the cluster.
+- You want to easily update the configuration without recreating pods.
+- You want to manage multiple versions of the configuration.
+
+Use Secrets when:
+
+- You have sensitive data that needs to be stored securely.
+- The data is confidential and should not be exposed in the cluster.
+- You want to ensure the data is encrypted at rest and in transit.
+- You want to restrict access to the data.
+
+In summary, use ConfigMaps for non-sensitive configuration data that needs to be easily updated, and use Secrets for sensitive data that needs to be stored securely.
 
 ###  Ingress
 
