@@ -1,6 +1,6 @@
 # Minikube
 
-![framer_motion_logo](../assets/minikube_logo.png)
+![minikube_logo](../assets/minikube_logo.png)
 
 ## What is Minikube?
 

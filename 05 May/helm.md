@@ -2,7 +2,7 @@
 
 Helm is a game-changer for Kubernetes enthusiasts, offering a streamlined approach to managing applications within Kubernetes clusters. As a developer, especially one delving into the world of Kubernetes, understanding Helm is crucial for efficient deployment and management of your applications. This guide aims to introduce you to Helm, highlighting its core features, benefits, and how it simplifies the Kubernetes experience.
 
-![framer_motion_logo](../assets/helm_logo.png)
+![helm_logo](../assets/helm_logo.png)
 
 ## What is Helm?
 
