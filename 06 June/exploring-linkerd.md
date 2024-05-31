@@ -21,6 +21,20 @@ Linkerd stands out for its comprehensive set of features designed to streamline 
 - Linkerd Getting Started Guide: <https://linkerd.io/2.15/getting-started/>
 - Linkerd Helm Guide: <https://linkerd.io/2.15/tasks/install-helm/>
 
+#### How to enable sidecar injection
+
+To enable automatic sidecar injection for new deployments, annotate your deployment manifests with `linkerd.io/inject: "enabled"`. For example:
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: your-deployment-name
+  annotations:
+    linkerd.io/inject: "enabled"
+spec: ...
+```
+
 ## Short dive into mTLS
 
 ### Automatic mTLS
