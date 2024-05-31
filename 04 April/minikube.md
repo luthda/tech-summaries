@@ -140,3 +140,7 @@ minikube tunnel
 
 Open adminer in browser and go to `http://adminer.k8s.com`.
 Connect to postgres database by using credentials from configmap.yaml in postgres folder.
+
+Citation:
+
+- <https://minikube.sigs.k8s.io/docs/>

@@ -59,3 +59,7 @@ Helm is a package manager specifically designed for Kubernetes. It revolutionize
 - **Security Enhancements**: Helm 3's architecture removes the Tiller component, addressing a critical security vulnerability and introducing a more secure upgrade strategy.
 
 In conclusion, Helm stands out as a pivotal tool in the Kubernetes ecosystem, offering a comprehensive solution for application deployment and management. Its ability to simplify complex processes, enhance security, and foster community support makes it an indispensable asset for developers navigating the Kubernetes landscape. Embrace Helm to elevate your Kubernetes deployments to new heights of efficiency and reliability.
+
+Citation:
+
+- <https://www.udemy.com/course/certified-kubernetes-application-developer>

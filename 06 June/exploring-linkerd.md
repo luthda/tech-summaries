@@ -33,3 +33,5 @@ This process involves the control plane issuing certificates to the data plane p
 ##  Conclusion
 
 In conclusion, Linkerd's combination of automatic mTLS for secure communication, seamless integration with Kubernetes, and powerful telemetry and monitoring capabilities makes it an attractive choice for developers looking to simplify the complexities of managing microservices. By leveraging these features, developers can focus on building innovative applications while ensuring that their services remain secure, reliable, and performant.
+
+Citation: <https://linkerd.io/2.14/>. <https://buoyant.io/mtls-guide>

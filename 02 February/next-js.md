@@ -25,3 +25,5 @@ Next.js is a powerful React framework that simplifies building modern web applic
 ##  Conclusion
 
 Next.js is a versatile framework that empowers developers to build high-performing and scalable React applications. It offers a streamlined development experience and caters to a wide range of web projects. However, for very basic websites, a simpler solution might be preferable.
+
+Citation: <https://nextjs.org/docs>

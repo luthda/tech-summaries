@@ -38,3 +38,5 @@ Determining whether a service mesh is suitable for your project involves evaluat
 ##  Conclusion
 
 In conclusion, service meshes represent a powerful tool in the arsenal of modern application development, offering advanced capabilities for managing service-to-service communication. By understanding the fundamentals of service meshes, developers can better evaluate their applicability to specific projects and leverage their benefits to create more robust, scalable, and secure applications.
+
+Citation: <https://buoyant.io/service-mesh-manifesto>

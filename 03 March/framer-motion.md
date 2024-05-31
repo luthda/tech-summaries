@@ -74,3 +74,5 @@ export MotionClickableButton;
 ## Conclusion
 
 Framer Motion makes it remarkably easy to create animations in React. It requires no in-depth CSS animation knowledge, allowing developers to create detailed animations with just a few additional elements and props. Its intuitive approach and the wide range of features make it a popular choice for implementing animations in React applications.
+
+Citation: <https://www.framer.com/motion/>, <https://www.nan.fyi/magic-motion>

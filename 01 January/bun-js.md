@@ -80,3 +80,5 @@ Bun.js is a new and fast JavaScript runtime that offers a simpler and more moder
 Bun.js is still in beta and not yet production-ready, so you should use it with caution and at your own risk. However, if you are curious and adventurous, you can use Bun.js to experiment with new and exciting possibilities for JavaScript and TypeScript development.
 
 I believe that Bun.js has great long-term potential because of the Dev Experience gains you get from the full Bun.js package.
+
+Citation: <https://bunjs.com/>, https://medium.com/deno-the-complete-reference/is-bun-really-much-faster-than-node-js-e5b15942a8e8
