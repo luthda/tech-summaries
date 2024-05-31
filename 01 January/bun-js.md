@@ -81,4 +81,4 @@ Bun.js is still in beta and not yet production-ready, so you should use it with 
 
 I believe that Bun.js has great long-term potential because of the Dev Experience gains you get from the full Bun.js package.
 
-Citation: <https://bunjs.com/>, https://medium.com/deno-the-complete-reference/is-bun-really-much-faster-than-node-js-e5b15942a8e8
+Citation: <https://bunjs.com/>, <https://medium.com/deno-the-complete-reference/is-bun-really-much-faster-than-node-js-e5b15942a8e8/>
