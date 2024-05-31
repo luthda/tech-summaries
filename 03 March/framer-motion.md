@@ -1,6 +1,5 @@
 # Framer Motion
 
-Framer Motion is an simple animation library for react.
 ![framer_motion_logo](../assets/framer_motion_logo.png)
 
 ##  What is Framer Motion?

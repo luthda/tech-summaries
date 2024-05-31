@@ -1,8 +1,10 @@
 # Next.js
 
-Next.js is a powerful React framework that simplifies building modern web applications. It extends React's capabilities with features like server-side rendering (SSR) and static site generation (SSG) for improved SEO and performance.
-
 ![nextjs_logo](../assets/next_js_logo.png)
+
+## What is Next.js?
+
+Next.js is a powerful React framework that simplifies building modern web applications. It extends React's capabilities with features like server-side rendering (SSR) and static site generation (SSG) for improved SEO and performance.
 
 ## Key benefits of Next.js?
 

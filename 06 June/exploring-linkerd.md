@@ -16,6 +16,11 @@ Linkerd stands out for its comprehensive set of features designed to streamline 
 - **Multi-cluster Communication**: Enables secure and seamless communication between services across different clusters, extending the reach of your service mesh beyond single Kubernetes environments.
 - **Mesh Expansion**: Supports the inclusion of non-Kubernetes workloads, expanding the scope of your service mesh to cover a broader range of applications and services.
 
+### Setup Guides
+
+- Linkerd Getting Started Guide: <https://linkerd.io/2.15/getting-started/>
+- Linkerd Helm Guide: <https://linkerd.io/2.15/tasks/install-helm/>
+
 ## Short dive into mTLS
 
 ### Automatic mTLS

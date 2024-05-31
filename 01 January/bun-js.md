@@ -1,12 +1,12 @@
 # Bun.js
 
+![bun_logo](../assets/bun_logo.png)
+
 ## Why Bun.js?
 
 Are you tired of Node.js being slow, complex, and outdated? Do you wish there was a better way to run JavaScript and TypeScript code on any machine?
 
 Duno? Nope, lets check out Bun.js, a new and fast JavaScript runtime that offers a simpler and more modern alternative to Node.js.
-
-![bun_logo](../assets/bun_logo.png)
 
 ## What is it?
 
