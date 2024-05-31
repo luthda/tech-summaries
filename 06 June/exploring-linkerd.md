@@ -1,5 +1,7 @@
 # Exploring Linkerd
 
+![linkerd_logo](../assets/linkerd_logo.png)
+
 ##  What is Linkerd?
 
 Linkerd is a service mesh that simplifies the complexities of building and maintaining reliable, observable, and secure microservices-based systems. As developers navigate the challenges of modern application development, service meshes like Linkerd offer a compelling solution for managing service-to-service communication. This blog post delves into the key features of Linkerd, focusing on automatic mTLS and telemetry and monitoring, to provide insights into how it enhances the development and operational aspects of microservices.
@@ -14,7 +16,7 @@ Linkerd stands out for its comprehensive set of features designed to streamline 
 - **Multi-cluster Communication**: Enables secure and seamless communication between services across different clusters, extending the reach of your service mesh beyond single Kubernetes environments.
 - **Mesh Expansion**: Supports the inclusion of non-Kubernetes workloads, expanding the scope of your service mesh to cover a broader range of applications and services.
 
-## Deep dive into mTLS
+## Short dive into mTLS
 
 ### Automatic mTLS
 

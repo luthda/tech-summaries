@@ -4,6 +4,8 @@
 
 A service mesh is essentially a dedicated infrastructure layer for handling service-to-service communication within a microservices architecture. It operates through two main components: the data plane and the control plane.
 
+![service_mesh_architecture](../assets/service_mesh_architecture.png)
+
 ### Data Plane
 
 The data plane consists of a network of proxies, often referred to as sidecars, that are deployed alongside each service instance. These proxies manage the actual network traffic between services. They can be implemented using various technologies, such as NGINX or HAProxy, and are sometimes referred to as micro-proxies in environments like Linkerd. The primary focus of these proxies is on the internal traffic between services, distinguishing them from traditional proxies or API gateways that primarily handle external traffic.
