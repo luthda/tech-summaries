@@ -18,4 +18,4 @@ Each summary is organized in a structured manner, making it easy to navigate and
 - [Apr: Minikube](./04%20April/minikube.md)
 - [May: Helm](./05%20May/helm.md)
 - [Jun: Service Mesh](./06%20June/service-mesh.md)
-- [Jun: Linkerd](./06%20June/linkerd.md)
+- [Jun: Exploring Linkerd](./06%20June/exploring-linkerd.md)
