@@ -51,7 +51,7 @@ Linkerd leverages a built-in certificate authority (CA), named `identity`, to is
 
 This process involves the control plane issuing certificates to the data plane proxies, which then use these certificates to establish secure connections. The control plane maintains a trust anchor and an issuer certificate and private key, which are used to validate the authenticity of the data plane proxies.
 
-Link Guide: <https://linkerd.io/2.15/tasks/generate-certificates/>
+Link Generate Certificates Guide: <https://linkerd.io/2.15/tasks/generate-certificates/>
 
 ##  Conclusion
 
