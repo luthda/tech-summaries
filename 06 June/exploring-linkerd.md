@@ -51,6 +51,8 @@ Linkerd leverages a built-in certificate authority (CA), named `identity`, to is
 
 This process involves the control plane issuing certificates to the data plane proxies, which then use these certificates to establish secure connections. The control plane maintains a trust anchor and an issuer certificate and private key, which are used to validate the authenticity of the data plane proxies.
 
+Link Guide: <https://linkerd.io/2.15/tasks/generate-certificates/>
+
 ##  Conclusion
 
 In conclusion, Linkerd's combination of automatic mTLS for secure communication, seamless integration with Kubernetes, and powerful telemetry and monitoring capabilities makes it an attractive choice for developers looking to simplify the complexities of managing microservices. By leveraging these features, developers can focus on building innovative applications while ensuring that their services remain secure, reliable, and performant.
