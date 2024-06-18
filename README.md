@@ -16,6 +16,6 @@ Each summary is organized in a structured manner, making it easy to navigate and
 - [Feb: Next.js](./02%20February/next-js.md)
 - [Mar: Framer Motion](./03%20March/framer-motion.md)
 - [Apr: Minikube](./04%20April/minikube.md)
-- [April: Helm](./04%20April/helm.md)
+- [Apr: Helm](./04%20April/helm.md)
 - [May: Service Mesh](./05%20May/service-mesh.md)
 - [May: Exploring Linkerd](./05%20May/exploring-linkerd.md)
