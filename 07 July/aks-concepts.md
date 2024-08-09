@@ -50,7 +50,7 @@ Using namespaces for environment separation provides a balance between isolation
 
 ##  Networking
 
-Networking is crucial in Kubernetes because it enables communication between pods, services, and external resources, forming the backbone of containerized applications. It is important that topics like the network topology is considered early in the Kubernetes cluster planning to ensure the cluster is stable.
+Networking is crucial in Kubernetes because it enables communication between pods, services, and external resources, forming the backbone of containerized applications. It is important that topics like the network model is considered early in the Kubernetes cluster planning to ensure the cluster is stable.
 
 Kubernetes networking addresses four key challenges:
 
@@ -61,13 +61,35 @@ Kubernetes networking addresses four key challenges:
 
 The Kubernetes networking model eliminates the need for explicit port allocation among applications sharing a machine. This approach resolves scaling issues and isolates users from cluster-level networking concerns, simplifying application deployment and communication in containerized environments.
 
+Thanks to the network model, connections between containers are possible through direct addressing without having to set up links first. Each pod also receives its own individual port, which simplifies the coordination of ports across the entire cluster. Network communication within a pod (normally = 1 container) takes place via loopback.
+
+###  CNI
+
+A CNI (Container Network Interface) plugin is used for Kubernetes to assign the IPs and set up the network model. Each cluster must decide on a corresponding CNI.
+
+Azure offers various solutions as CNI plugins:
+
+- Azure CNI for dynamic IP allocation
+- Azure CNI overlay
+- Azure CNI with cilium
+
+###  Overlay CNI
+
+An Overlay CNI in Kubernetes creates a virtual network layer that enables pod-to-pod communication across nodes and networks, using encapsulation to abstract away underlying network complexities and improve scalability.
+
+Classic CNI vs. Overlay CNI:
+
+- In classic CNI, the cluster is set up in a subnet. The CNI then dynamically uses IPs from this subnet to allocate IPs to pods. This offers full transparency within the subnet, but there's a risk that the subnet may run out of IPs and no new IPs can be allocated. Especially with zero downtime deployments, the cluster temporarily needs multiple times the number of IPs that are actively used. If IPs run out, errors can occur. Therefore, a large subnet (larger than a Class C network) is recommended for classic CNI.
+
+- With Overlay CNI, IP allocation changes. Instead of directly using IPs from the cluster's subnet, a subnet (/24) is created per node. These overlay networks are virtual and separated by NAT. This way, each node can distribute 250 IPs itself, and the cluster is not dependent on the external subnet.
+
 ###  Cluster neworking
 
 Kubernetes cluster networking is a comprehensive system enabling communication between various components. It includes pod, node, and service networks, utilizing CNI plugins for implementation. The system incorporates DNS for service discovery, Ingress for external access management, and Network Policies for security. It handles both internal and external load balancing, manages external communication, and uses **overlay networks** for cross-node pod communication. This model provides a flexible, scalable, and secure framework for efficient operation of complex distributed applications within Kubernetes clusters.
 
-###  Why choosing the right network topology matters?
+###  Why choosing the right network model matters?
 
-Neglecting network topology in Kubernetes cluster planning can lead to several problems:
+Neglecting network model in Kubernetes cluster planning can lead to several problems:
 
 - Performance bottlenecks: The cluster is deployed with a basic network configuration. As traffic increases, they notice severe latency in database queries. Investigation reveals that database pods are communicating across different nodes, causing network congestion.
 - Security vulnerabilities: Without proper network policies, a compromised front-end pod can directly access the database, violating the principle of least privilege.
