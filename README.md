@@ -19,4 +19,4 @@ Each summary is organized in a structured manner, making it easy to navigate and
 - [May: Helm](./05%20May/helm.md)
 - [Jun: Service Mesh](./06%20June/service-mesh.md)
 - [Jun: Exploring Linkerd](./06%20June/exploring-linkerd.md)
-- [Jul: Kubernetes Concepts](./07%20July/kubernetes-concepts.md)
+- [Jul: Azure Kubernetes Service - Concepts](./07%20July/aks-concepts.md)
