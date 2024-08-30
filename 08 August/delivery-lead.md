@@ -33,3 +33,19 @@ Most important activities:
 
 - **Leadership**: align project goals & team member goals, identify and resolve team conflicts, maintain team motivation, organize visits and social events, establish continuous improvement, support performance feedback process
 - **Intentional learning**: create environment for team and members to grow and develop
+
+##  Situational Leadership
+
+Situational Leadership is a leadership model developed by Paul Hersey and Ken Blanchard. It proposes that there is no single "best" style of leadership, and effective leaders sßhould adapt their approach based on the situation and the readiness level of their followers. The model suggests four leadership styles:
+
+- Directing: High task focus, low relationship focus
+
+- Coaching: High task focus, high relationship focus
+
+- Supporting: Low task focus, high relationship focus
+
+- Delegating: Low task focus, low relationship focus
+
+Leaders should choose the appropriate style based on their assessment of the follower's competence and commitment. As followers develop and become more skilled and motivated, leaders can adjust their style accordingly, moving from more directive approaches to more supportive and delegative ones. This flexibility allows leaders to provide what their team members need most at any given time, enhancing both individual and team performance.
+
+![situational-leadership](../assets/situational_leadership.png)
