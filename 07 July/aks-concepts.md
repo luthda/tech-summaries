@@ -1,5 +1,7 @@
 # Azure Kubernetes Service (AKS) - Concepts
 
+![azure_logo](../assets/azure_logo.png)
+
 ## Managed Kubernetes Service
 
 A managed Kubernetes service like AKS is a cloud platform that automates the deployment, scaling, and management of containerized applications using Kubernetes, handling the underlying infrastructure and cluster operations so users can focus on application development and deployment, while reducing complexity and operational overhead compared to a plain Kubernetes setup, which offers more control but requires greater expertise and resources to manage effectively.
@@ -148,3 +150,5 @@ This scenario demonstrates how a seemingly simple oversight in network planning 
 - Planning for separate subnets for different environments or services
 
 By addressing these network topology considerations early, the company could have avoided deployment failures, service disruptions, and limitations on cluster growth.
+
+Citation: <https://learn.microsoft.com/en-us/azure/aks/core-aks-concepts>
