@@ -2,6 +2,17 @@
 
 ![framer_motion_logo](../assets/framer_motion_logo.png)
 
+## Table of Contents
+
+- [What is Framer Motion?](#what-is-framer-motion)
+- [Key Animation Features](#key-animation-features)
+  - [Layout](#layout)
+  - [Gestures](#gestures)
+  - [Scroll](#scroll)
+  - [Transition](#transition)
+- [What is the Motion Component?](#what-is-the-motion-component)
+- [Conclusion](#conclusion)
+
 ##  What is Framer Motion?
 
 Framer Motion is a powerful animation library for React, designed to simplify the process of adding animations to React applications. It provides a range of features, including declarative syntax, animation controls, and support for both simple and complex animations. The library offers several elements enhanced with "animation values" and motion-hooks, allowing for smooth animations of single elements to entire sub-trees of components with minimal additional code.
@@ -74,4 +85,7 @@ export MotionClickableButton;
 
 Framer Motion makes it remarkably easy to create animations in React. It requires no in-depth CSS animation knowledge, allowing developers to create detailed animations with just a few additional elements and props. Its intuitive approach and the wide range of features make it a popular choice for implementing animations in React applications.
 
-Citation: <https://www.framer.com/motion/>, <https://www.nan.fyi/magic-motion>
+Citation:
+
+- <https://www.framer.com/motion/>
+- <https://www.nan.fyi/magic-motion>

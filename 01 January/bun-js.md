@@ -2,6 +2,20 @@
 
 ![bun_logo](../assets/bun_logo.png)
 
+## Table of Contents
+
+- [Why Bun.js?](#why-bunjs)
+- [What is it?](#what-is-it)
+- [What can you do with Bun.js?](#what-can-you-do-with-bunjs)
+- [How stable is Bun.js?](#how-stable-is-bunjs)
+- [How does Bun.js compare to other tools?](#how-does-bunjs-compare-to-other-tools)
+  - [Runtime: Node.js](#runtime-nodejs)
+  - [Bundler: Vite](#bundler-vite)
+- [Pros and Cons of Bun.js](#pros-and-cons-of-bunjs)
+  - [Pros](#pros)
+  - [Cons](#cons)
+- [Conclusion](#conclusion)
+
 ## Why Bun.js?
 
 Are you tired of Node.js being slow, complex, and outdated? Do you wish there was a better way to run JavaScript and TypeScript code on any machine?
@@ -81,4 +95,7 @@ Bun.js is still in beta and not yet production-ready, so you should use it with 
 
 I believe that Bun.js has great long-term potential because of the Dev Experience gains you get from the full Bun.js package.
 
-Citation: <https://bunjs.com/>, <https://medium.com/deno-the-complete-reference/is-bun-really-much-faster-than-node-js-e5b15942a8e8/>
+Citation:
+
+- <https://bunjs.com/>
+- <https://medium.com/deno-the-complete-reference/is-bun-really-much-faster-than-node-js-e5b15942a8e8/>

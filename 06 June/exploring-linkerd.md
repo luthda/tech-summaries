@@ -2,6 +2,18 @@
 
 ![linkerd_logo](../assets/linkerd_logo.png)
 
+## Table of Contents
+
+- [What is Linkerd?](#what-is-linkerd)
+- [Overview of some key features of Linkerd](#overview-of-some-key-features-of-linkerd)
+- [Setup Guides](#setup-guides)
+  - [How to enable sidecar injection](#how-to-enable-sidecar-injection)
+- [Short dive into mTLS](#short-dive-into-mtls)
+  - [Automatic mTLS](#automatic-mtls)
+    - [What is mTLS?](#what-is-mtls)
+    - [How does it work?](#how-does-it-work)
+- [Conclusion](#conclusion)
+
 ##  What is Linkerd?
 
 Linkerd is a service mesh that simplifies the complexities of building and maintaining reliable, observable, and secure microservices-based systems. As developers navigate the challenges of modern application development, service meshes like Linkerd offer a compelling solution for managing service-to-service communication. This blog post delves into the key features of Linkerd, focusing on automatic mTLS and telemetry and monitoring, to provide insights into how it enhances the development and operational aspects of microservices.

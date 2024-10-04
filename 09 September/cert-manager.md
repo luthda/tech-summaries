@@ -1,8 +1,10 @@
 # Certificate-Manager
 
+![cert-manager-logo](../assets/cert_manager_logo.png)
+
 ## Table of Contents
 
-- [Introduction to Cert-Manager](#introduction-to-cert-manager)
+- [What is a Cert-Manager?](#what-is-a-cert-manager)
 - [Issuers and ClusterIssuers](#issuers-and-clusterissuers)
 - [Certificate Issuance Workflow](#certificate-issuance-workflow)
 - [Configuration Files](#configuration-files)
@@ -17,12 +19,11 @@
   - [Why Multiple Issuers?](#why-multiple-issuers)
   - [Internal vs. External Certificates](#internal-vs-external-certificates)
   - [Revisit mTLS (Mutual TLS) for Internal Services](#revisit-mtls-mutual-tls-for-internal-services)
-- [Summary](#summary)
-- [Further Reading](#further-reading)
+- [Conclusion](#conclusion)
 
-## Introduction to Cert-Manager
+## What is a Cert-Manager?
 
-**cert-manager** is a Kubernetes add-on that automates the management and issuance of TLS certificates from various issuing sources, including Let's Encrypt. It simplifies certificate provisioning and renewal for Kubernetes services.
+Cert-manager is a Kubernetes add-on that automates the management and issuance of TLS certificates from various issuing sources, including Let's Encrypt. It simplifies certificate provisioning and renewal for Kubernetes services.
 
 ## Issuers and ClusterIssuers
 
@@ -247,7 +248,7 @@ spec:
   - Trust Management:
     - Centralized trust with the internal CA simplifies certificate management.
 
-## Summary
+## Conclusion
 
 A cert-manager automates TLS certificate issuance and renewal in our Kubernetes cluster. Using both ClusterIssuer and namespace-scoped Issuers provides flexibility and enhances security, while mTLS is implemented for internal services using certificates issued by the internal CA, and certificates are stored in Kubernetes Secrets and should be appropriately secured.
 

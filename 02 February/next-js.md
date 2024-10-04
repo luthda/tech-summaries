@@ -2,6 +2,14 @@
 
 ![nextjs_logo](../assets/next_js_logo.png)
 
+## Table of Contents
+
+- [What is Next.js?](#what-is-nextjs)
+- [Key Benefits of Next.js?](#key-benefits-of-nextjs)
+- [Next.js Use Cases](#nextjs-use-cases)
+  - [When Not to Use](#when-not-to-use)
+- [Conclusion](#conclusion)
+
 ## What is Next.js?
 
 Next.js is a powerful React framework that simplifies building modern web applications. It extends React's capabilities with features like server-side rendering (SSR) and static site generation (SSG) for improved SEO and performance.
@@ -28,4 +36,6 @@ Next.js is a powerful React framework that simplifies building modern web applic
 
 Next.js is a versatile framework that empowers developers to build high-performing and scalable React applications. It offers a streamlined development experience and caters to a wide range of web projects. However, for very basic websites, a simpler solution might be preferable.
 
-Citation: <https://nextjs.org/docs>
+Citation:
+
+- <https://nextjs.org/docs>

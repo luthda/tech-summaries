@@ -1,5 +1,16 @@
 # Service Mesh
 
+## Table of Contents
+
+- [What is a Service Mesh?](#what-is-a-service-mesh)
+- [Data Plane](#data-plane)
+- [Control Plane](#control-plane)
+- [Key design features of Service Meshes](#key-design-features-of-service-meshes)
+- [Why use a Service Mesh?](#why-use-a-service-mesh)
+- [When should you consider using a Service Mesh?](#when-should-you-consider-using-a-service-mesh)
+- [When should you NOT consider using a Service Mesh?](#when-should-you-not-consider-using-a-service-mesh)
+- [Conclusion](#conclusion)
+
 ## What is a Service Mesh?
 
 A service mesh is essentially a dedicated infrastructure layer for handling service-to-service communication within a microservices architecture. It operates through two main components: the data plane and the control plane.

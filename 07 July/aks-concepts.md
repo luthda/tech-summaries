@@ -2,6 +2,17 @@
 
 ![azure_logo](../assets/azure_logo.png)
 
+## Table of Contents
+
+- [Managed Kubernetes Service](#managed-kubernetes-service)
+- [Cluster Components](#cluster-components)
+- [Namespaces](#namespaces)
+- [Networking](#networking)
+- [CNI](#cni)
+  - [Overlay CNI](#overlay-cni)
+  - [Cluster neworking](#cluster-networking)
+  - [Why choosing the right network model matters?](#why-choosing-the-right-network-model-matters)
+
 ## Managed Kubernetes Service
 
 A managed Kubernetes service like AKS is a cloud platform that automates the deployment, scaling, and management of containerized applications using Kubernetes, handling the underlying infrastructure and cluster operations so users can focus on application development and deployment, while reducing complexity and operational overhead compared to a plain Kubernetes setup, which offers more control but requires greater expertise and resources to manage effectively.
@@ -85,7 +96,7 @@ Classic CNI vs. Overlay CNI:
 
 - With Overlay CNI, IP allocation changes. Instead of directly using IPs from the cluster's subnet, a subnet (/24) is created per node. These overlay networks are virtual and separated by NAT. This way, each node can distribute 250 IPs itself, and the cluster is not dependent on the external subnet.
 
-###  Cluster neworking
+###  Cluster networking
 
 Kubernetes cluster networking is a comprehensive system enabling communication between various components. It includes pod, node, and service networks, utilizing CNI plugins for implementation. The system incorporates DNS for service discovery, Ingress for external access management, and Network Policies for security. It handles both internal and external load balancing, manages external communication, and uses **overlay networks** for cross-node pod communication. This model provides a flexible, scalable, and secure framework for efficient operation of complex distributed applications within Kubernetes clusters.
 

@@ -2,6 +2,26 @@
 
 ![minikube_logo](../assets/minikube_logo.png)
 
+## Table of Contents
+
+- [What is Minikube?](#what-is-minikube)
+- [How to set up Minikube?](#how-to-set-up-minikube)
+- [Important Kubernetes concepts for this summary](#important-kubernetes-concepts-for-this-summary)
+  - [Deplyoment](#deplyoment)
+  - [Service](#service)
+  - [Persistent Volume and Persistent Volume Claim](#persistent-volume-and-persistent-volume-claim)
+  - [ConfigMap](#configmap)
+  - [Secrets](#secrets)
+  - [Ingress](#ingress)
+  - [ClusterIP](#clusterip)
+  - [Kustomize](#kustomize)
+- [Setup Postgres and Adminer on local environment in Minikube](#setup-postgres-and-adminer-on-local-environment-in-minikube)
+  - [Deploy Postgres on Minikube](#deploy-postgres-on-minikube)
+  - [Deploy Adminer on Minikube](#deploy-adminer-on-minikube)
+  - [Deploy ingress on Minikube](#deploy-ingress-on-minikube)
+  - [Modify host file](#modify-host-file)
+  - [Open tunnel for ingress](#open-tunnel-for-ingress)
+
 ## What is Minikube?
 
 Minikube is a tool that allows you to run Kubernetes locally on your machine. It sets up a single-node Kubernetes cluster that is great for development and testing purposes.

@@ -2,6 +2,24 @@
 
 ![helm_logo](../assets/helm_logo.png)
 
+## Table of Contents
+
+- [What is Helm?](#what-is-helm)
+- [Key benefits of using Helm](#key-benefits-of-using-helm)
+  - [Simplifies Deployments](#simplifies-deployments)
+  - [Increases Efficiency](#increases-efficiency)
+  - [Improves Deployment Complexity](#improves-deployment-complexity)
+  - [Enhances Security](#enhances-security)
+  - [Supports Version Control and Reusability](#supports-version-control-and-reusability)
+  - [Community Support](#community-support)
+  - [Smooths the Kubernetes Learning Curve](#smooths-the-kubernetes-learning-curve)
+- [Advantages over traditional YAML files](#advantages-over-traditional-yaml-files)
+  - [Templating](#templating)
+  - [Packaging](#packaging)
+  - [Versioning and Rollback](#versioning-and-rollback)
+  - [Simplified Management](#simplified-management)
+  - [Improved Security](#improved-security)
+
 ## What is Helm?
 
 Helm is a package manager specifically designed for Kubernetes. It revolutionizes the deployment process by allowing developers to define, install, and upgrade complex Kubernetes applications using Helm Charts. These charts are essentially collections of files that encapsulate a set of Kubernetes resources, making deployments more manageable and less error-prone.
