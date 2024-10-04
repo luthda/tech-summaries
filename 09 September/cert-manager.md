@@ -34,11 +34,11 @@ Cert-manager is a Kubernetes add-on that automates the management and issuance o
 
 1. **Deploy cert-manager**: Install cert-manager into the Kubernetes cluster.
 2. **Define Issuers**:
-   - **ClusterIssuer** for external certificates from Let's Encrypt.
-   - **Self-signed Issuer** to create a root CA within the cluster.
-   - **CA Issuer** to issue internal certificates signed by the internal CA.
+   - ClusterIssuer for external certificates from Let's Encrypt.
+   - Self-signed Issuer to create a root CA within the cluster.
+   - CA Issuer to issue internal certificates signed by the internal CA.
 3. **Request Certificates**:
-   - Use **Certificate** resources to request certificates from the appropriate issuer.
+   - Use certificate resources to request certificates from the appropriate issuer.
 4. **Certificate Usage**:
    - Certificates are stored in Kubernetes Secrets and used by applications and services for secure communication.
 
@@ -68,7 +68,7 @@ spec:
 **Explanation**:
 
 - ClusterIssuer letsencrypt: Configured to obtain certificates from Let’s Encrypt.
-- ACME Protocol: Uses HTTP-01 challenge with NGINX Ingress Controller to verify domain ownership.
+- ACME Protocol: Uses HTTP-01 challenge with NGINX ingress controller to verify domain ownership.
 
 ### Cert-Manager Values Configuration
 
@@ -82,8 +82,8 @@ ingressShim:
 
 **Explanation**:
 
-- Ingress Shim: Automates certificate creation for Ingress resources.
-- Default Issuer: Sets letsencrypt as the default ClusterIssuer for certificates.
+- Ingress shim: Automates certificate creation for Ingress resources.
+- Default issuer: Sets letsencrypt as the default ClusterIssuer for certificates.
 
 ### Issuer Configuration
 
@@ -137,7 +137,7 @@ spec:
 **Explanation**:
 
 - Certificate ca: Creates a self-signed root CA certificate.
-- Issuer Reference: Uses the selfsigned Issuer to self-sign the certificate.
+- Issuer reference: Uses the selfsigned Issuer to self-sign the certificate.
 - Purpose: Establishes an internal CA for issuing internal certificates.
 
 #### Internal Certificate
@@ -167,8 +167,8 @@ spec:
 **Explanation**:
 
 - Certificate database: Requests an internal certificate for services.
-- DNS Names: Covers internal service domains.
-- Issuer Reference: Uses the ca Issuer (internal CA) to sign the certificate.
+- DNS names: Covers internal service domains.
+- Issuer reference: Uses the ca issuer (internal CA) to sign the certificate.
 - Purpose: Enables secure communication between internal services.
 
 #### External Certificate
@@ -197,52 +197,52 @@ spec:
 **Explanation**:
 
 - Certificate platfrom: Requests certificates for external domains.
-- DNS Names: Lists the external domains to secure.
-- Issuer Reference: Uses the ClusterIssuer letsencrypt to obtain certificates from Let’s Encrypt.
+- DNS names: Lists the external domains to secure.
+- Issuer reference: Uses the ClusterIssuer letsencrypt to obtain certificates from Let’s Encrypt.
 - Purpose: Secures external endpoints with publicly trusted certificates.
 
 ## Understanding the Setup
 
 ### Why Multiple Issuers?
 
-- ClusterIssuer letsencrypt:
+- **ClusterIssuer letsencrypt**:
   - Scope: Cluster-wide.
   - Purpose: Obtain publicly trusted certificates for external services.
-- Issuer selfsigned and Issuer ca:
+- **Issuer selfsigned and Issuer ca**:
   - Scope: Namespace-scoped.
   - Purpose: Create an internal CA and issue certificates for internal services.
-- Reasoning:
+- **Reasoning**:
   - Separation of Concerns: Different issuers for internal and external certificates enhance security and manageability.
   - Scope Control: Namespace-scoped issuers prevent unauthorized use across namespaces.
 
 ### Internal vs. External Certificates
 
-- Internal Certificates:
+- **Internal Certificates**:
   - Issued By: Internal CA (Issuer ca).
   - Usage: Secure communication between internal services.
   - Certificates: Not publicly trusted; trust is established within the cluster.
-- External Certificates:
+- **External Certificates**:
   - Issued By: Let’s Encrypt (ClusterIssuer letsencrypt).
   - Usage: Secure external endpoints accessible over the internet.
   - Certificates: Publicly trusted by clients and browsers.
 
 ### Revisit mTLS (Mutual TLS) for Internal Services
 
-- What is mTLS?:
+- **What is mTLS?**:
   - [Jun: Exploring Linkerd](../06%20June/exploring-linkerd.md)
-- mTLS in Cluster:
+- **mTLS in Cluster**:
   - Certificates with client auth and server auth Usages:
     - The internal-certificate.yaml certificate includes both server auth and client auth in its usages.
     - This enables services to act as both clients and servers in mTLS communication.
-- Purpose:
+- **Purpose**:
   - Secure Internal Communication:
     - mTLS ensures that only authenticated services can communicate within the cluster.
     - Protects against unauthorized access and man-in-the-middle attacks.
-- Implementation:
+- **Implementation**:
   - Certificates Issued by Internal CA:
     - Internal certificates are used for mTLS between services.
     - Services trust the internal CA and validate certificates presented by peers.
-- Benefits:
+- **Benefits**:
   - Enhanced Security:
     - Ensures that all parties in communication are verified.
   - Trust Management:
