@@ -21,4 +21,4 @@ Each summary is organized in a structured manner, making it easy to navigate and
 - [Jun: Exploring Linkerd](./06%20June/exploring-linkerd.md)
 - [Jul: Azure Kubernetes Service - Concepts](./07%20July/aks-concepts.md)
 - [Aug: Delivery Lead](08%20August/delivery-lead.md)
-- [Sep: Certicate Manager](09%20September/cert-manager.md)
+- [Sep: Cert Manager](09%20September/cert-manager.md)

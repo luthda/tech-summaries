@@ -1,4 +1,4 @@
-# Certificate-Manager
+# Cert-Manager
 
 ![cert-manager-logo](../assets/cert_manager_logo.png)
 
