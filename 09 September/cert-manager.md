@@ -233,6 +233,7 @@ spec:
 - **mTLS in Cluster**:
   - Certificates with client auth and server auth Usages:
     - The internal-certificate.yaml certificate includes both server auth and client auth in its usages.
+    - The ca.yaml and internal-certificate.yaml establish an internal PKI (Public Key Infrastructure) within your cluster.
     - This enables services to act as both clients and servers in mTLS communication.
 - **Purpose**:
   - Secure Internal Communication:
@@ -244,9 +245,11 @@ spec:
     - Services trust the internal CA and validate certificates presented by peers.
 - **Benefits**:
   - Enhanced Security:
+    - Full control over certificate issuance.
     - Ensures that all parties in communication are verified.
   - Trust Management:
     - Centralized trust with the internal CA simplifies certificate management.
+    - No dependence on external services for internal communication.
 
 ## Conclusion
 
