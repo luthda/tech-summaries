@@ -1,5 +1,14 @@
 # Delivery Lead
 
+## Table of Contents
+
+- [What is a Delivery Lead?](#what-is-a-delivery-lead)
+- [Three Pillars of a Delivery Lead](#three-pillars-of-a-delivery-lead)
+  - [Project administration](#project-administration)
+  - [Operational management](#operational-management)
+  - [People care](#people-care)
+  - [Situational Leadership](#situational-leadership)
+
 ##  What is a Delivery Lead?
 
 A Deliver Lead is a role that is responsible for ensuring the successful delivery of a project. It envolves customer satisfaction, employee satisfaction and day-to-day operations of the project.
@@ -50,4 +59,6 @@ Leaders should choose the appropriate style based on their assessment of the fol
 
 ![situational-leadership](../assets/situational_leadership.png)
 
-Citation: <https://www.aoec.com/knowledge-bank/situational-leadership-getting-best-coaching-approach/>
+Citation:
+
+- <https://www.aoec.com/knowledge-bank/situational-leadership-getting-best-coaching-approach/>

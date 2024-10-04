@@ -151,4 +151,6 @@ This scenario demonstrates how a seemingly simple oversight in network planning 
 
 By addressing these network topology considerations early, the company could have avoided deployment failures, service disruptions, and limitations on cluster growth.
 
-Citation: <https://learn.microsoft.com/en-us/azure/aks/core-aks-concepts>
+Citation:
+
+- <https://learn.microsoft.com/en-us/azure/aks/core-aks-concepts>
