@@ -253,7 +253,7 @@ spec:
 
 ## Conclusion
 
-A cert-manager automates TLS certificate issuance and renewal in our Kubernetes cluster. Using both ClusterIssuer and namespace-scoped Issuers provides flexibility and enhances security, while mTLS is implemented for internal services using certificates issued by the internal CA, and certificates are stored in Kubernetes Secrets and should be appropriately secured.
+A cert-manager automates TLS certificate issuance and renewal in our Kubernetes cluster. Using both ClusterIssuer and namespace-scoped Issuers provides flexibility and enhances security, while mTLS is implemented for internal services using certificates issued by the internal CA. The certificates are stored in Kubernetes Secrets and should be appropriately secured.
 
 Citations:
 
