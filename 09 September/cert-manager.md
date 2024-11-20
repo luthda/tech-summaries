@@ -183,9 +183,9 @@ metadata:
 spec:
   secretName: platfrom-ingress-cert
   dnsNames:
-    - api.dev.scp.platformplane.io
+    - api.dev.platformplane.io
     - portal.dev.platformplane.io
-    - auth.dev.scp.platformplane.io
+    - auth.dev.platformplane.io
   usages:
     - digital signature
     - key encipherment
