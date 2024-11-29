@@ -1,5 +1,7 @@
 # Ruby on Rails
 
+![rails_logo](../assets/ruby_on_rails_logo.png)
+
 Web development has come a long way, and choosing the right framework can significantly impact your project’s success. In this blog post, we’ll explore **Ruby on Rails** and **Next.js**, two powerful frameworks for building web applications. We’ll compare their advantages and disadvantages and provide insights on how to build a webpage with Ruby on Rails, similar to [my open-source Next.js portfolio](https://github.com/luthda/nextjs-dev-portfolio).
 
 ## Table of Contents
