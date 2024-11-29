@@ -9,7 +9,7 @@ Web development has come a long way, and choosing the right framework can signif
 - [What is Ruby on Rails?](#what-is-ruby-on-rails)
   - [Advantages](#advantages-of-ruby-on-rails)
   - [Disadvantages](#disadvantages-of-ruby-on-rails)
-- [Next.js](#nextjs)
+- [What is Next.js?](#what-is-nextjs)
   - [Advantages](#advantages-of-nextjs)
   - [Disadvantages](#disadvantages-of-nextjs)
 - [Comparison](#comparison)

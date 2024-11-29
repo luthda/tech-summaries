@@ -22,3 +22,5 @@ Each summary is organized in a structured manner, making it easy to navigate and
 - [Jul: Azure Kubernetes Service - Concepts](./07%20July/aks-concepts.md)
 - [Aug: Delivery Lead](08%20August/delivery-lead.md)
 - [Sep: Cert Manager](09%20September/cert-manager.md)
+- [Oct: Redis Kubernetes](10%20October/redis-kubernetes.md)
+- [Nov: Ruby On Rails](11%20November/ruby-on-rails.md)
