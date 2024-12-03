@@ -1,6 +1,6 @@
 # Tech Summaries
 
-Welcome to the Tech Summaries repository! This repository contains technical summaries on various topics for each month.
+Welcome to the Tech Summaries repository! This repository contains technical summaries on various project related topics for each month.
 
 ## Summary Structure
 
