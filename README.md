@@ -24,3 +24,4 @@ Each summary is organized in a structured manner, making it easy to navigate and
 - [Sep: Cert Manager](09%20September/cert-manager.md)
 - [Oct: Redis Kubernetes](10%20October/redis-kubernetes.md)
 - [Nov: Ruby On Rails](11%20November/ruby-on-rails.md)
+- [Dec: ArgoCD](12%20December/argo-cd.md)
