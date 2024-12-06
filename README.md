@@ -10,7 +10,7 @@ Each summary is organized in a structured manner, making it easy to navigate and
 - The file starts with a title and a short introduction that provides a high-level overview of the topic.
 - The main content of the summary is divided into sections, with each section containing relevant information and explanations.
 
-##  Table of Contents
+## Table of Contents
 
 - [Jan: Bun.js](./01%20January/bun-js.md)
 - [Feb: Next.js](./02%20February/next-js.md)
