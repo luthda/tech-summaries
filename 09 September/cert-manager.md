@@ -4,12 +4,12 @@
 
 ## Table of Contents
 
-- [What is a Cert-Manager?](#what-is-a-cert-manager)
+- [What is a cert-manager?](#what-is-a-cert-manager)
 - [Issuers and ClusterIssuers](#issuers-and-clusterissuers)
 - [Certificate Issuance Workflow](#certificate-issuance-workflow)
 - [Configuration Files](#configuration-files)
   - [ClusterIssuer Configuration](#clusterissuer-configuration)
-  - [Cert-Manager Values Configuration](#cert-manager-values-configuration)
+  - [cert-manager Values Configuration](#cert-manager-values-configuration)
   - [Issuer Configuration](#issuer-configuration)
   - [Certificate Configuration](#certificate-configuration)
     - [CA Certificate](#ca-certificate)
@@ -21,7 +21,7 @@
   - [Revisit mTLS (Mutual TLS) for Internal Services](#revisit-mtls-mutual-tls-for-internal-services)
 - [Conclusion](#conclusion)
 
-## What is a Cert-Manager?
+## What is a cert-manager?
 
 Cert-manager is a Kubernetes add-on that automates the management and issuance of TLS certificates from various issuing sources, including Let's Encrypt. It simplifies certificate provisioning and renewal for Kubernetes services.
 
@@ -70,7 +70,7 @@ spec:
 - ClusterIssuer letsencrypt: Configured to obtain certificates from Let’s Encrypt.
 - ACME Protocol: Uses HTTP-01 challenge with NGINX ingress controller to verify domain ownership.
 
-### Cert-Manager Values Configuration
+### cert-manager Values Configuration
 
 File: `values-cert-manager.yaml` (cluster-wide)
 

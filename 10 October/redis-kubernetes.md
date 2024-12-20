@@ -2,35 +2,35 @@
 
 ![redis_logo](../assets/redis_logo.png)
 
-Redis on Kubernetes
+redis on Kubernetes
 
 ## Table of Contents
 
-- [What is Redis?](#what-is-redis)
-- [Redis Architecture](#redis-architecture)
+- [What is redis?](#what-is-redis)
+- [redis Architecture](#redis-architecture)
   - [Standalone Mode](#standalone-mode)
   - [Replication Mode](#replication-mode)
   - [Sentinel Mode](#sentinel-mode)
-- [Deploying Redis on Kubernetes](#deploying-redis-on-kubernetes)
+- [Deploying redis on Kubernetes](#deploying-redis-on-kubernetes)
   - [Configuration Files](#configuration-files)
   - [Argo CD Application Manifest](#argo-cd-application-manifest)
 - [Understanding the Setup](#understanding-the-setup)
-  - [Why Use Redis Sentinel?](#why-use-redis-sentinel)
+  - [Why Use redis sentinel?](#why-use-redis-sentinel)
   - [High Availability and Failover](#high-availability-and-failover)
   - [Metrics and Monitoring](#metrics-and-monitoring)
 - [Conclusion](#conclusion)
 
-## What is Redis?
+## What is redis?
 
-Redis is an open-source, in-memory data structure store used as a database, cache, and message broker. Renowned for its speed and versatility, Redis supports various data structures like strings, hashes, lists, sets, and more. It’s widely utilized for caching, real-time analytics, messaging, and session management.
+Redis is an open-source, in-memory data structure store used as a database, cache, and message broker. Renowned for its speed and versatility, redis supports various data structures like strings, hashes, lists, sets, and more. It’s widely utilized for caching, real-time analytics, messaging, and session management.
 
-## Redis Architecture
+## redis Architecture
 
 Redis offers multiple architectures to cater to different use cases, from simple caching to complex distributed systems.
 
 ### Standalone Mode
 
-- Description: A single Redis instance handling all read and write operations.
+- Description: A single redis instance handling all read and write operations.
 - Use Case: Suitable for development or low-load environments where high availability isn’t critical.
 - Limitations: Single point of failure; no automatic failover or replication.
 
@@ -42,21 +42,21 @@ Redis offers multiple architectures to cater to different use cases, from simple
 
 ### Sentinel Mode
 
-- Description: Adds Redis Sentinel nodes to monitor master and slave instances, providing automatic failover.
+- Description: Adds redis sentinel nodes to monitor master and slave instances, providing automatic failover.
 - Use Case: High availability environments where automatic recovery from failures is essential.
 - Benefits:
   - Automatic master election and failover.
   - Monitoring and notifications.
   - Configuration provider for clients.
 
-## Deploying Redis on Kubernetes
+## Deploying redis on Kubernetes
 
-Deploying Redis on Kubernetes involves containerizing Redis instances and managing them using Kubernetes resources. Helm charts simplify this process by providing pre-configured templates for deploying complex applications.
+Deploying redis on Kubernetes involves containerizing redis instances and managing them using Kubernetes resources. Helm charts simplify this process by providing pre-configured templates for deploying complex applications.
 
 In this setup, we’re using:
 
 - Argo CD: A declarative, GitOps continuous delivery tool for Kubernetes.
-- Bitnami Redis Helm Chart: A widely used chart that supports various Redis architectures, including Sentinel.
+- Bitnami redis Helm Chart: A widely used chart that supports various redis architectures, including sentinel.
 
 ## Configuration Files
 
@@ -119,12 +119,12 @@ Explanation:
         - metrics: Enables Prometheus metrics and ServiceMonitor for monitoring.
         - auth:
           - enabled: Disables password authentication for simplicity.
-          - sentinel: Disables authentication for Sentinel nodes.
+          - sentinel: Disables authentication for sentinel nodes.
         - sentinel:
-          - enabled: Enables Redis Sentinel for automatic failover.
+          - enabled: Enables redis sentinel for automatic failover.
   - destination:
     - server: Kubernetes API server address (default in-cluster).
-    - namespace: The Kubernetes namespace where Redis will be deployed.
+    - namespace: The Kubernetes namespace where redis will be deployed.
   - syncPolicy:
     - syncOptions:
       - CreateNamespace: Automatically creates the namespace if it doesn’t exist.
@@ -135,23 +135,23 @@ Explanation:
 
 ## Understanding the Setup
 
-### Why Use Redis Sentinel?
+### Why Use redis sentinel?
 
-- High Availability: Sentinel provides automatic failover by promoting a slave to master if the master fails.
+- High Availability: sentinel provides automatic failover by promoting a slave to master if the master fails.
 - Monitoring: Continuously checks the health of master and slave instances.
 - Notification: Alerts administrators or systems about changes or failures.
-- Configuration Provider: Clients can query Sentinel to find the current master.
+- Configuration Provider: Clients can query sentinel to find the current master.
 
 ### High Availability and Failover
 
 In this setup:
 
-- Master-Slave Replication:
+- master-slave replication:
   - The master handles write operations.
   - Slaves replicate data from the master and handle read operations.
-- Sentinel Nodes:
-  - Deployed alongside Redis instances.
-  - Monitor the health of the Redis cluster.
+- sentinel nodes:
+  - Deployed alongside redis instances.
+  - Monitor the health of the redis cluster.
   - Coordinate automatic failover by electing a new master if needed.
 
 Benefits:
@@ -170,17 +170,17 @@ Considerations:
 
 - Prometheus Metrics:
   - Enabled via metrics.enabled: true.
-  - Exposes Redis metrics in the Prometheus format.
+  - Exposes redis metrics in the Prometheus format.
 - ServiceMonitor:
   - Enabled via serviceMonitor.enabled: true.
   - Allows Prometheus Operator to discover and scrape metrics automatically.
 - Benefits:
-  - Visibility: Real-time insights into Redis performance and health.
+  - Visibility: Real-time insights into redis performance and health.
   - Alerting: Set up alerts based on metrics for proactive issue resolution.
 
 ## Conclusion
 
-Deploying Redis with Sentinel on Kubernetes provides a robust, high-availability solution for caching and data storage. By leveraging Argo CD and Helm charts, the deployment process becomes streamlined and manageable. The configuration allows for automatic failover, scalability, and easy integration with monitoring tools.
+Deploying redis with sentinel on Kubernetes provides a robust, high-availability solution for caching and data storage. By leveraging Argo CD and Helm charts, the deployment process becomes streamlined and manageable. The configuration allows for automatic failover, scalability, and easy integration with monitoring tools.
 
 Citations
 
