@@ -179,9 +179,9 @@ spec:
 apiVersion: cert-manager.io/v1
 kind: Certificate
 metadata:
-  name: platfrom
+  name: platform
 spec:
-  secretName: platfrom-ingress-cert
+  secretName: platform-ingress-cert
   dnsNames:
     - api.dev.platformplane.io
     - portal.dev.platformplane.io
@@ -196,7 +196,7 @@ spec:
 
 **Explanation**:
 
-- Certificate platfrom: Requests certificates for external domains.
+- Certificate platform: Requests certificates for external domains.
 - DNS names: Lists the external domains to secure.
 - Issuer reference: Uses the ClusterIssuer letsencrypt to obtain certificates from Let’s Encrypt.
 - Purpose: Secures external endpoints with publicly trusted certificates.
