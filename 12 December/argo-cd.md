@@ -1,5 +1,7 @@
 # Argo CD
 
+![argo-cd-logo](../assets/argo_cd_logo.png)
+
 Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes. It automates the deployment of desired application states defined in Git repositories to Kubernetes clusters, ensuring that the deployed applications are always in sync with the source configurations.
 
 ## Table of Contents
@@ -27,11 +29,12 @@ Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes. It aut
 ## What is Argo CD?
 
 Argo CD is a declarative, GitOps-based continuous delivery tool specifically designed for Kubernetes. It continuously monitors Git repositories for changes and automatically applies them to Kubernetes clusters, ensuring that the cluster’s state matches the desired state defined in Git. Argo CD provides features such as:
-• Declarative Setup: Define your application deployments in Git, version-controlled and auditable.
-• Automated Syncing: Automatically or manually synchronize changes from Git to Kubernetes.
-• Visibility: Offers a web UI and CLI for visualizing application states and deployment histories.
-• RBAC: Fine-grained access control to manage who can deploy and modify applications.
-• Integration: Supports various authentication mechanisms, including OAuth2 and OIDC for integrating with identity providers like Azure AD.
+
+- Declarative Setup: Define your application deployments in Git, version-controlled and auditable.
+- Automated Syncing: Automatically or manually synchronize changes from Git to Kubernetes.
+- Visibility: Offers a web UI and CLI for visualizing application states and deployment histories.
+- RBAC: Fine-grained access control to manage who can deploy and modify applications.
+- Integration: Supports various authentication mechanisms, including OAuth2 and OIDC for integrating with identity providers like Azure AD.
 
 ## Argo CD Architecture
 
@@ -536,9 +539,8 @@ Argo CD streamlines continuous delivery for Kubernetes by leveraging GitOps prin
 
 Citations
 
-- Argo CD Official Documentation
-- Cert-Manager Documentation
-- Kubernetes RBAC Documentation
-- NGINX Ingress Controller Annotations
-- GitOps Principles
-- Azure AD OIDC Integration with Argo CD
+- <https://argo-cd.readthedocs.io/en/stable/>
+- <https://argo-cd.readthedocs.io/en/stable/user-guide/best_practices/>
+- <https://cert-manager.io/docs/>
+- <https://kubernetes.io/docs/concepts/security/rbac-good-practices/>
+- <https://argo-cd.readthedocs.io/en/stable/operator-manual/user-management/auth0/>
